@@ -72,3 +72,13 @@ console.log(area)
 // o calculo funciona igual na matematica normal se houver () ele calculara o que está em () primeiro se houver * ele calculara o * e depois fará o restante
 let exemplo = (10 + 10) - 10 + 10 * 2
 console.log(exemplo)
+
+// leitura de dados no teclado
+// npm install prompt-sync ou npm i prompt-sync
+const prompt = require('prompt-sync')()
+
+nome = prompt('Digite seu nome: ')
+numero = Number(prompt('Digite um numero: ')) // Number() transforma o valor em numero
+
+
+
