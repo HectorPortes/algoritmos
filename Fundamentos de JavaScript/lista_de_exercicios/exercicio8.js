@@ -12,6 +12,7 @@ idade_dias = Number(prompt('Digite a idade total em dias: '))
 
 anos = Math.trunc(idade_dias / 365)
 meses = Math.trunc((idade_dias % 365) / 30)
-dias = ((idade_dias % 365) % 30)
+dias = (idade_dias % 365) % 30
+
 
 console.log('Idade: ', anos, ' anos, ', meses, ' meses e ', dias, ' dias.')
