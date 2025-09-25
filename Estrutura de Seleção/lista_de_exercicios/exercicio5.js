@@ -1,34 +1,29 @@
-// Exercício 5: Ordenar Três Valores
-// (Complexidade: Alta) - Construa um algoritmo que receba como entrada três valores e os imprima em ordem crescente (do menor para o maior).
+// Exercício 5: Faixa Etária Permitida
+// (Complexidade: Média) - Crie um algoritmo que leia a idade de uma pessoa e informe se ela pode entrar em um evento. A regra é: apenas pessoas com idade maior ou igual a 18 e menor que 60 podem entrar.
 // Exemplo de Interação:
-// Digite o primeiro valor: 30
-// Digite o segundo valor: 10
-// Digite o terceiro valor: 20
+// Digite a idade: 20
 // Saída no Console:
-// Os números em ordem crescente são: 10, 20, 30.
+// Entrada permitida.
+// Digite a idade: 65
+// Saída no Console:
+// Entrada não permitida.
 const prompt = require('prompt-sync')()
 
-let numero1, numero2, numero3
-numero1 = Number(prompt('Digite um número: '))
-numero2 = Number(prompt('Digite um número: '))
-numero3 = Number(prompt('Digite um número: '))
+let idade = Number(prompt('Digite a sua idade: '))
 
-if(numero1 > numero2 && numero1 > numero3){
-    if(numero2 > numero3){
-        console.log('Os número em ordem crescente são: ', numero1, numero2, numero3)
-    } else{
-        console.log('Os número em ordem crescente são: ', numero1, numero3, numero2)
-    }
-} else if(numero2 > numero1 && numero2 > numero3) {
-    if(numero3 > numero1){
-        console.log('Os número em ordem crescente são: ', numero2, numero3, numero1)
-    } else{
-        console.log('Os número em ordem crescente são: ', numero2, numero1, numero3)
-    }
-} else if(numero3 > numero1 && numero3 > numero2) {
-    if(numero2 > numero1){
-        console.log('Os número em ordem crescente são: ', numero3, numero2, numero1)
-    } else{
-        console.log('Os número em ordem crescente são: ', numero3, numero1, numero2)
-    }
+// Resolvendo com if
+if(idade <= 60 && idade >= 18){
+    console.log('Entrada permitida.')
+} else {
+    console.log('Entrada não permitida.')
+}
+
+// Resolvendo com switch case
+switch (true) {
+    case idade <= 60 && idade >= 18:
+        console.log('Entrada permitida.')
+        break
+    default:
+        console.log('Entrada não permitida.')
+        break
 }

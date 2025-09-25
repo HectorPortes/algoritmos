@@ -15,7 +15,7 @@ const prompt = require('prompt-sync')()
 let numero1 = Number(prompt('Digite um número: '))
 let numero2 = Number(prompt('Digite um número: '))
 
-if(numero1 === numero2) {
+if(numero1 == numero2) {
     console.log('Os números são iguais.')
 } else if(numero1 > numero2) {
     console.log('Os números são diferentes. O número', numero1, ' é o maior, e o número', numero2, ' é o menor.')

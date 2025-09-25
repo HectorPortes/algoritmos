@@ -29,3 +29,30 @@ if(dia_semana == 1) {
 } else {
     console.log('Erro: Número inválido. Por favor, digite um número de 1 a 7.')
 }
+
+// Segunda forma de se fazer com switch case
+switch (dia_semana) {
+    case dia_semana = 1:
+        console.log("Domingo")
+        break;
+    case dia_semana = 2:
+        console.log("Segunda")
+        break;
+    case dia_semana = 3:
+        console.log("Segunda")
+        break;
+    case dia_semana = 4:
+        console.log("Segunda")
+        break;
+    case dia_semana = 5:
+        console.log("Segunda")
+        break;
+    case dia_semana = 6:
+        console.log("Segunda")
+        break;
+    case dia_semana = 7:
+        console.log("Segunda")
+        break;
+    default:
+        console.log("Erro: Número inválido. Por favor, digite um número de 1 a 7.")
+}
