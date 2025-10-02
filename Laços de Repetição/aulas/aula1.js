@@ -121,6 +121,7 @@ const prompt = require('prompt-sync')()
 // -----------------------------------------------------------------
 
 
+
 // -----------------------------------------------------------------
 //Escreva um algoritmo que leia um valor inicial de A e imprima a sequência de valores do cálculo de A! e o seu resultado. Ex: 5! = 5 x 4 x 3 x 1 = 120
 
