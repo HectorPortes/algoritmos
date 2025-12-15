@@ -24,16 +24,18 @@ for(i = 0; i < 5; i++){
     B[i] = ns1 
 }
 
-let contador_A = 0
-let contador_B = 0
-for(i = 0; i < 10; i++){
-    if(i % 2 === 0){
-        C[i] = A[contador_A]
-        contador_A++
-    } else {
-        C[i] = B[contador_B]
-        contador_B++
-    }
+// let contador_A = 0
+// let contador_B = 0
+for(i = 0; i < 5; i++){
+    C[2 * i] = A[i]
+    C[2 * i + 1] = B[i]
+    //if(i % 2 === 0){
+    //    C[i] = A[contador_A]
+    //    contador_A++
+    //} else {
+    //    C[i] = B[contador_B]
+    //    contador_B++
+    //}
 }
 
 console.log('Vetor A: ', A)

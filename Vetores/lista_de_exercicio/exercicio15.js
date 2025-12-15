@@ -9,7 +9,6 @@
 const prompt = require('prompt-sync')()
 
 let vetor = []
-let contador = 0
 for(let i = 9; i > -1; i--){
     let numeros = Number(prompt('Digite o número: '))
     vetor[i] = numeros
